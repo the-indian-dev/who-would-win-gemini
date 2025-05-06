@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Character Fight Simulator</title>
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "@google/genai": "https://esm.sh/@google/genai@^0.12.0"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Who would win?</h1>
+            <div class="api-key-note">
+                <p>Please do not insert political people here or hurt anyone!</p>
+            </div>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="charA">Character A:</label>
+                    <input type="text" id="charA" value="Marisa Kirisame" />
+                </div>
+                <div class="input-group">
+                    <label for="charB">Character B:</label>
+                    <input type="text" id="charB" value="Gordon Freeman" />
+                </div>
+                <button id="fightButton">Fight!</button>
+            </div>
+
+            <div id="loading" class="status-message" style="display: none">
+                <div class="spinner"></div>
+                Fetching results from Gemini...
+            </div>
+            <div id="error" class="status-message error-message" style="display: none"></div>
+
+            <div id="results" style="display: none">
+                <h2>Results</h2>
+                <p><strong>Winner:</strong> <span id="winner"></span></p>
+                <div class="character-details">
+                    <div class="character-card">
+                        <h3 id="charANameDisplay">Character A</h3>
+                        <p><strong>Strength:</strong> <span id="strength_a"></span></p>
+                        <p><strong>Special Attack:</strong> <span id="special_attack_a"></span></p>
+                    </div>
+                    <div class="character-card">
+                        <h3 id="charBNameDisplay">Character B</h3>
+                        <p><strong>Strength:</strong> <span id="strength_b"></span></p>
+                        <p><strong>Special Attack:</strong> <span id="special_attack_b"></span></p>
+                    </div>
+                </div>
+                <h3>Fight Description:</h3>
+                <p id="fight_description"></p>
+            </div>
+
+            <div class="footer">
+                <p>
+                    Programmed with ❤️ by
+                    <a href="https://theindiandev.in" target="_blank">Ritabrata Das</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
