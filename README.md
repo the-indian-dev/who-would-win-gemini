@@ -3,6 +3,10 @@
 A fun little app that lets you pit two random characters against each other and vote on who would win in a fight.
 I was trying vibe coding so the code maybe a bit bad.
 
+Hosted at [https://who-would-win.theindiandev.in/](https://who-would-win.theindiandev.in/)
+
+Lisecned under MIT
+
 ## Run Locally
 
 **Prerequisites:**  Node.js
