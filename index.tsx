@@ -74,7 +74,7 @@ fight_description : A maximum of 100 word paragraph on how the fight is, make it
       },
     ],
   };
-  const model = "gemini-2.5-flash-preview-04-17";
+  const model = "gemini-2.5-flash";
   const contents = [
     {
       role: "user",
